@@ -1,0 +1,271 @@
+.aboutlight{
+  background-color: #ffffff;
+}
+.aboutlight .abtagline{
+  color: #000000;
+}
+.aboutlight .abheadline{
+  color: #0a083b;
+}
+.aboutlight .abdesc{
+  color: #9d9d9d;
+}
+.aboutlight .title{
+  color: #000000;
+}
+.aboutlight .percent{
+  color: #000000;
+}
+.aboutlight .abbutton{
+  background-color: #0a083b;
+  border: 1px solid #0a083b;
+  color: #eeeeee;
+}
+.aboutdark{
+  background-color: #141414;
+  padding-bottom: 20px;
+}
+.aboutdark .abtagline{
+  color: #eeeeee;
+}
+.aboutdark .abheadline{
+  color: #ffffff;
+}
+.aboutdark .abdesc{
+  color: #eeeeee;
+}
+.aboutdark .title{
+  color: #eeeeee;
+}
+.aboutdark .percent{
+  color: #eeeeee;
+}
+.aboutdark .abbutton{
+  background-color: #212525;
+  border: 1px solid #212525;
+  color: #eeeeee;
+}
+.aboutdark .aboutgraphimg,
+.aboutdark .aboutboximg,
+.aboutdark .aboutleftshapeimg,
+.aboutdark .aboutbg{
+  filter: invert(1);
+}
+.aboutcontainer {
+  padding-top: 70px !important;
+}
+.imagebox {
+  position: relative;
+}
+.aboutbg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+}
+.aboutmainimg {
+  z-index: 22;
+}
+.aboutboximg {
+  position: absolute;
+  top: 20%;
+  right: 25%;
+}
+.aboutemojiimg {
+  position: absolute;
+  top: 10%;
+}
+.aboutgraphimg {
+  position: absolute;
+  bottom: 10%;
+  left: -20%;
+}
+.aboutleftshapeimg {
+  position: absolute;
+  top: -25%;
+  left: -40%;
+}
+.abtagline {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.abheadline {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.abdesc {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px;
+}
+.abprogress {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.abprogress1,
+.abprogress2 {
+  display: flex;
+  margin-right: 30px;
+  align-items: center;
+}
+.percent {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  border-top: 4px solid #61ce70;
+  border-left: 2px solid #61ce70;
+  padding: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.abbutton {
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  margin-top: 20px;
+}
+.abbutton:hover {
+  background-color: #61ce70;
+  border: 1px solid #61ce70;  
+}
+.abbutton:hover {
+  opacity: 0.8;
+}
+@media only screen and (max-width: 1024px) {
+  .aboutboximg {
+    position: absolute;
+    top: 20%;
+    right: -5%;
+  }
+  .aboutgraphimg {
+    position: absolute;
+    bottom: 10%;
+    left: -10%;
+  }
+  .aboutleftshapeimg {
+    position: absolute;
+    top: -15%;
+    left: -20%;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .imagebox {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .abprogress{
+    justify-content: center;
+  }
+  .abbutton{
+    display: flex;
+    justify-self: center;
+  }
+  .aboutbg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+  }
+  .aboutemojiimg {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+  }
+  .aboutboximg {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+  }
+  .aboutgraphimg {
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+  }
+  .aboutleftshapeimg {
+    display: none;
+  }
+  .percent {
+    padding: 40px;
+    margin-right: 30px;
+  }
+  .title {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .aboutboximg {
+    right: -10%;
+  }
+  .aboutgraphimg {
+    left: -15%;
+  }
+  .aboutemojiimg {
+    top: 15%;
+    left: 10%;
+  }
+  .abtagline,
+  .abbutton,
+  .abheadline,
+  .abdesc {
+    text-align: center;
+  }
+  .abbutton {
+    display: flex;
+    margin: 20px auto;
+  }
+  .percent {
+    padding: 30px;
+    margin-right: 20px;
+  }
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .aboutmainimg,
+  .aboutbg {
+    width: 80%;
+  }
+  .aboutmainimg {
+    width: 50%;
+  }
+  .aboutgraphimg {
+    display: none;
+  }
+  .aboutboximg {
+    display: none;
+  }
+  .abheadline {
+    font-size: 28px;
+  }
+  .abprogress {
+    display: block;
+    text-align: center;
+  }
+  .abprogress1 {
+    margin-bottom: 20px;
+    margin-right: 0;
+    justify-content: center;
+  }
+  .abprogress2 {
+    justify-content: center;
+    margin-right: 0;
+  }
+}

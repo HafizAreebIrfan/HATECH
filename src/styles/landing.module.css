@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap");
+
+.landinglight{
+  background-color: #ffffff;
+}
+.landinglight .landtagline h4{
+  color: #000000;
+}
+.landinglight .landheadline h1{
+  color: #0a083b;
+}
+.landinglight .landingdesc p{
+  color: #9d9d9d;
+}
+.landingdark{
+  background-color: #141410;
+}
+.landingdark .landtagline h4{
+  color: #eeeeee;
+}
+.landingdark .landheadline h1{
+  color: #ffffff;
+}
+.landingdark .landingdesc p{
+  color: #eeeeee;
+}
+.landingdark .landingbtn a{
+  background-color: #212525;
+  border: 1px solid #212525;
+}
+.landtagline h4 {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.landheadline h1 {
+  font-size: 44px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.landingdesc p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #9d9d9d;
+  text-align: justify;
+}
+.landingimage {
+  width: 100%;
+  height: 100%;
+}
+.landingbtn a {
+  background-color: #0a083b;
+  border: 1px solid #0a083b;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.landingbtn a:hover {
+  background-color: #61ce70;
+  border: 1px solid #61ce70;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1200px) {
+  .landheadline h1 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .landingleft{
+    padding-top: 50px;
+  }
+  .landtagline h4{
+    text-align: center;
+  }
+  .landheadline h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .landingdesc p{
+    text-align: center;
+  }
+  .landingbtn{
+    display: flex;
+    justify-self: center;
+  }
+  .landingimage{
+    width: 80%;
+    display: flex;
+    justify-self: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .landheadline h1, .landingdesc p, .landtagline h4, .landingbtn  {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 587px) {
+  .landheadline h1 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .landheadline h1 {
+    font-size: 24px;
+  }
+}

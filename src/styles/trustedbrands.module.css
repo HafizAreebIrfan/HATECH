@@ -1,0 +1,19 @@
+.trustedlight{
+  background-color: #ffffff;
+}
+.trusteddark{
+  background-color: #141414;
+}
+.trusteddark .logoimg{
+  filter: invert(1);
+}
+.slideshowcontainer {
+  padding: 30px;
+  align-items: center;
+  text-align: center;
+}
+.logoimg{
+    width: 60px;
+    text-align: center;
+    align-items: center;
+}

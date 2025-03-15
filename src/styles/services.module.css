@@ -1,0 +1,344 @@
+.serviceslight{
+  background-color: #ffffff;
+}
+.serviceslight .sertagline{
+  color: #000000;
+}
+.serviceslight .serheadline{
+  color: #0a083b;
+}
+.serviceslight .serdesc{
+  color: #eeeeee;
+}
+.serviceslight .serbtn{
+  color: #eeeeee;
+  background-color: #0a083b;
+  border: 1px solid #0a083b;
+}
+.serviceslight .serbox1,
+.serviceslight .serbox2,
+.serviceslight .serbox3,
+.serviceslight .serbox4{
+  border: 1px solid #eeeeee !important;
+}
+.servicesdark{
+  background-color: #141414;
+}
+.servicesdark .serheader{
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 30px;
+}
+.servicesdark .sertagline{
+  color: #eeeeee;
+}
+.servicesdark .serheadline{
+  color: #ffffff;
+}
+.servicesdark .serdesc{
+  color: #eeeeee;
+}
+.servicesdark .serbtn{
+  color: #eeeeee;
+  background-color: #212525;
+  border: 1px solid #212525;
+}
+.servicesdark .serbox1,
+.servicesdark .serbox2,
+.servicesdark .serbox3,
+.servicesdark .serbox4{
+  border: 1px solid #eeeeee !important;
+}
+.sercontainer {
+  padding-top: 120px;
+  padding-bottom: 70px;
+}
+.serheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sertagline {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.serheadline {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.serbtn {
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  margin-top: 20px;
+}
+.serbtn:hover {
+  background-color: #61ce70;
+  border: 1px solid #61ce70;
+}
+.serbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.serbox1,
+.serbox2,
+.serbox3,
+.serbox4 {
+  border-radius: 25px;
+  margin-right: 20px;
+  height: 250px;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  transition: 0.3s ease;
+}
+.serbox1 {
+  flex-basis: 50%;
+}
+.serbox2 {
+  flex-basis: 25%;
+}
+.serbox3 {
+  flex-basis: 12.5%;
+}
+.serbox4 {
+  flex-basis: 12.5%;
+}
+.activebox {
+  flex-basis: 25% !important;
+}
+.inactivebox {
+  flex-basis: 12.5% !important;
+}
+.serbox1::before,
+.serbox2::before,
+.serbox3::before,
+.serbox4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+.serbox1::before {
+  background-image: url("../assets/ser1.jpg");
+  filter: blur(2px);
+}
+.serbox2::before {
+  background-image: url("../assets/ser2.jpg");
+  filter: blur(2px);
+}
+.serbox3::before {
+  background-image: url("../assets/ser3.jpg");
+  filter: blur(6px);
+}
+.serbox4::before {
+  background-image: url("../assets/ser4.jpg");
+  filter: blur(4px);
+}
+.sertitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  padding-top: 55px;
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+.serdesc {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+.boxcount {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  background-color: #0a083b;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  padding: 10px 20px;
+  left: 5px;
+  display: none;
+}
+.collsertitle {
+  z-index: 1;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translate(-50%) rotate(-90deg);
+  display: none;
+}
+.collboxcount {
+  background-color: #0a083b;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  border-radius: 50%;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%) rotate(-90deg);
+  display: none;
+}
+.serbox1 .collboxcount {
+  display: none !important;
+}
+.serbox1 .sertitle,
+.serbox1 .serdesc,
+.serbox1 .boxcount {
+  display: block;
+}
+.inactivebox .collsertitle,
+.inactivebox .collboxcount {
+  display: block;
+}
+.activebox .sertitle,
+.activebox .serdesc,
+.activebox .boxcount {
+  display: block;
+}
+.serbox2 .collsertitle {
+  bottom: 120px;
+}
+.serbox3 .collsertitle {
+  bottom: 100px;
+}
+.serbox4 .collsertitle {
+  bottom: 100px;
+}
+
+@media only screen and (max-width: 991px) {
+  .serbox {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .serbox1 {
+    height: 200px;
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .activebox {
+    flex-basis: 50% !important;
+  }
+  .inactivebox {
+    flex-basis: 20% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .serheadline {
+    font-size: 24px;
+  }
+  .activebox {
+    flex-basis: 45% !important;
+  }
+  .inactivebox {
+    flex-basis: 15%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .serheader {
+    text-align: center;
+    justify-content: center;
+  }
+  .serbox {
+    justify-content: center;
+  }
+  .serbox1,
+  .serbox2,
+  .serbox3,
+  .serbox4 {
+    margin-right: 0;
+  }
+  .serheadline {
+    font-size: 20px;
+  }
+  .serbtn {
+    display: none;
+  }
+  .serbox1 {
+    height: 250px;
+  }
+  .serbox3,
+  .serbox4 {
+    height: 300px;
+  }
+  .activebox.serbox2 {
+    flex-basis: 100% !important;
+  }
+  .inactivebox.serbox2 .collboxcount,
+  .inactivebox.serbox2 .collsertitle {
+    display: none;
+  }
+  .inactivebox.serbox2 {
+    flex-basis: 100% !important;
+  }
+  .inactivebox.serbox2 .sertitle,
+  .inactivebox.serbox2 .serdesc,
+  .inactivebox.serbox2 .boxcount {
+    display: block;
+  }
+  .activebox {
+    flex-basis: 63% !important;
+    margin-top: 30px;
+  }
+  .inactivebox {
+    flex-basis: 25% !important;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .serbox1 {
+    height: 280px;
+  }
+  .inactivebox {
+    flex-basis: 100% !important;
+  }
+  .activebox {
+    flex-basis: 100% !important;
+  }
+  .inactivebox.serbox3 .collboxcount,
+  .inactivebox.serbox3 .collsertitle {
+    display: none;
+  }
+  .inactivebox.serbox4 .collboxcount,
+  .inactivebox.serbox4 .collsertitle {
+    display: none;
+  }
+  .inactivebox.serbox3 .sertitle,
+  .inactivebox.serbox3 .serdesc,
+  .inactivebox.serbox3 .boxcount {
+    display: block;
+  }
+  .inactivebox.serbox4 .sertitle,
+  .inactivebox.serbox4 .serdesc,
+  .inactivebox.serbox4 .boxcount {
+    display: block;
+  }
+}

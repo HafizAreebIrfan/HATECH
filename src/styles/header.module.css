@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 12;
+}
+.headerlight{
+  background-color: #ffffff !important;
+}
+.headerlight .navtoggleicon{
+  color: #31363f !important;
+}
+.headerlight .menuitem a{
+  color: #9d9d9d !important;
+}
+.headerlight .menutoggleofficon{
+  color: #31363f !important;
+}
+.headerlight .menutoggleoff{
+  background: none !important;
+}
+.headerlight .offcanvas{
+  background-color: #ffffff !important;
+}
+.headerlight .themetext{
+  color: #9d9d9d;
+}
+.headerdark{
+  background-color: #141410 ;
+}
+.headerdark .togglebtn{
+  background-color: #212525;
+  box-shadow: 0 0 12px 4px #212525;
+}
+.headerdark .themetext{
+  color: #eeeeee;
+}
+.headerdark .menuitem a{
+  color: #eeeeee;
+}
+.headerdark .toggleicon{
+  color: #eeeeee;
+}
+.headerdark .navtoggleicon{
+  color: #eeeeee !important;
+}
+.headerdark .menutoggleofficon{
+  color: #eeeeee !important;
+}
+.headerdark .menutoggleoff{
+  background: none !important;
+}
+.headerdark .offcanvas{
+  background-color: #141410 !important;
+}
+p, li, a{
+  font-family: 'Poppins', sans-serif;
+}
+.logoimg {
+  width: 180px;
+}
+.navtoggleicon {
+  outline: none !important;
+  border: none !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  box-shadow: none !important;
+}
+.menuitem {
+  font-size: 18px;
+  font-weight: 400;
+}
+.navtoggleicon:focus,
+.navtoggleicon:hover {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.togglebtn {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 0 12px 4px #eeeeee;
+  width: 50px;
+  cursor: pointer;
+  height: 25px;
+  border-radius: 20px;
+  padding-block: 5px;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+.toggleicon {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translate(0%, -50%);
+  font-size: 20px;
+  color: #000000;
+  z-index: 3;
+  transition: left 0.3s ease;
+}
+.toggledicon {
+  left: calc(50px - 25px);
+}
+.menutoggleoff{
+  position: absolute;
+  right: 10%;
+  border: none;
+  background-color: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+}
+.menutoggleofficon{
+  font-size: 18px;
+  font-weight: 400;
+}
+.menuitem a:hover{
+  color: #61ce70 !important;
+}
+.menuitem a.active{
+  color: #61ce70 !important;
+}
+@media only screen and (max-width: 587px){
+    .logoimg{
+        width: 140px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .themetext,.togglebtn{
+      margin-top: 20px;
+    }
+}

@@ -1,0 +1,142 @@
+.reviewslight{
+  background-color: #ffffff;
+}
+.reviewslight .reviewheader{
+  border-bottom: 1px solid #eeeeee;
+}
+.reviewslight .revheadertag {
+  color: #000000;
+}
+.reviewslight .revheadertitle {
+  color: #0a083b;
+}
+.reviewslight .reviewcounttext {
+  color: #0a083b;
+}
+.reviewslight .reviewcount {
+  color: #61ce70;
+}
+.reviewslight .reviewdescription {
+  color: #9d9d9d;
+}
+.reviewslight .review{
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 8px 4px #eeeeee;
+}
+.reviewslight .reviewtitle{
+  color: #0a083b;
+}
+.reviewslight .reviewdesc{
+  color: #9d9d9d;
+}
+.reviewsdark{
+  background-color: #141414;
+}
+.reviewsdark .reviewheader{
+  border-bottom: 1px solid #eeeeee;
+}
+.reviewsdark .revheadertag {
+  color: #eeeeee;
+}
+.reviewsdark .revheadertitle {
+  color: #ffffff;
+}
+.reviewsdark .reviewcounttext {
+  color: #ffffff;
+}
+.reviewsdark .reviewcount {
+  color: #61ce70;
+}
+.reviewsdark .reviewdescription {
+  color: #eeeeee;
+}
+.reviewsdark .review{
+  border: 1px solid #212525;
+  background-color: #212525;
+  box-shadow: 0px 0px 8px 4px #141414;
+}
+.reviewsdark .reviewtitle{
+  color: #ffffff;
+}
+.reviewsdark .reviewdesc{
+  color: #eeeeee;
+}
+.reviewheader{
+  padding-bottom: 30px;
+}
+.slideshowcontainer {
+  align-items: center;
+  padding-top: 120px;
+}
+.revheadertag {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.revheadertitle {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.reviewcounttext {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.reviewcount {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+.reviewdescription {
+  font-size: 18px;
+  font-weight: 400;
+}
+.review{
+  border: 1px solid #e7e6e6;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 25px;
+  display: flex !important;
+  align-items: start !important;
+  box-shadow: 0px 0px 8px 4px #e7e6e6;
+  margin: 30px 15px;
+  width: 95% !important;
+}
+.userimg {
+  width: 60px;
+  margin-right: 20px;
+}
+.reviewtitle{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+.reviewdesc{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Poppins',sans-serif;
+  text-align: left;
+}
+@media only screen and (max-width: 1024px){
+  .review{
+    margin: 30px 5px;
+    flex-wrap: wrap;
+  }
+  .reviewtitle{
+    padding-top: 15px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .reviewheader{
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 600px){
+  .review{
+    width: 100%;
+    margin: 30px 10px;
+  }
+}
