@@ -6,12 +6,11 @@ import { WiDaySunny } from "react-icons/wi";
 import { IoClose } from "react-icons/io5";
 import { MdNightlightRound } from "react-icons/md";
 
-export default function Header({toggle, handletoggle, istoggled}) {
+export default function Header({toggle, handletoggle, activescroll}) {
   return (
     <>
       <div
-        className={`${styles.header} 
-          ${!toggle ? `${styles.headerlight}` : `${styles.headerdark}`}
+        className={`${styles.header} ${!toggle ? `${styles.headerlight}` : `${styles.headerdark}`}
           navbar navbar-expand-lg d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3`}
       >
         <div className="container px-4">
@@ -48,37 +47,37 @@ export default function Header({toggle, handletoggle, istoggled}) {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-center flex-grow-1 mb-md-0">
                 <li className={`${styles.menuitem} nav-item`}>
-                  <a href="#" className={`nav-link ${styles.active}`}>
+                  <a href="#" className={`nav-link ${activescroll === "home" ? styles.active: ''}`}>
                     Home
                   </a>
                 </li>
                 <li className={`${styles.menuitem} nav-item`}>
-                  <a href="#" className={`nav-link`}>
-                    Services
-                  </a>
-                </li>
-                <li className={`${styles.menuitem} nav-item`}>
-                  <a href="#" className={`nav-link`}>
+                  <a href="#" className={`nav-link ${activescroll === "about" ? styles.active: ''}`}>
                     About
                   </a>
                 </li>
                 <li className={`${styles.menuitem} nav-item`}>
-                  <a href="#" className={`nav-link`}>
+                  <a href="#" className={`nav-link ${activescroll === "services" ? styles.active:''}`}>
+                    Services
+                  </a>
+                </li>
+                <li className={`${styles.menuitem} nav-item`}>
+                  <a href="#" className={`nav-link ${activescroll === "product" ? styles.active:''}`}>
                     Product
                   </a>
                 </li>
                 <li className={`${styles.menuitem} nav-item`}>
-                  <a href="#" className={`nav-link`}>
-                    Reviews
-                  </a>
-                </li>
-                <li className={`${styles.menuitem} nav-item`}>
-                  <a href="#" className={`nav-link`}>
+                  <a href="#" className={`nav-link ${activescroll === "pricing" ? styles.active:''}`}>
                     Pricing
                   </a>
                 </li>
                 <li className={`${styles.menuitem} nav-item`}>
-                  <a href="#" className={`nav-link`}>
+                  <a href="#" className={`nav-link ${activescroll === "reviews" ? styles.active:''}`}>
+                    Reviews
+                  </a>
+                </li>
+                <li className={`${styles.menuitem} nav-item`}>
+                  <a href="#" className={`nav-link ${activescroll === "contact" ? styles.active:''}`}>
                     Contact
                   </a>
                 </li>

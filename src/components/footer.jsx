@@ -31,9 +31,15 @@ export default function Footer({toggle}){
                   </ul>
                 </div>
                 <div className="social">
-                  <FaGithubSquare className={`${styles.footicon}`} />
-                  <FaLinkedin className={`${styles.footicon}`} />
-                  <MdEmail className={`${styles.footicon}`} />
+                  <a target='_' href="https://github.com/HafizAreebIrfan">
+                    <FaGithubSquare className={`${styles.footicon}`} />
+                  </a>
+                  <a target='_' href="https://www.linkedin.com/in/hafiz-areeb-irfan-748312236/">
+                    <FaLinkedin className={`${styles.footicon}`} />
+                  </a>
+                  <a target='_' href="mailto:hafizareebirfan@gmail.com">
+                    <MdEmail className={`${styles.footicon}`} />
+                  </a>
                 </div>
               </div>
             </div>

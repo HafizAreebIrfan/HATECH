@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 .header {
-  position: sticky;
+  position: sticky !important;
   top: 0;
   left: 0;
   right: 0;
@@ -122,6 +122,7 @@ p, li, a{
 }
 .menuitem a.active{
   color: #61ce70 !important;
+  border-bottom: 1px solid #61ce70;
 }
 @media only screen and (max-width: 587px){
     .logoimg{

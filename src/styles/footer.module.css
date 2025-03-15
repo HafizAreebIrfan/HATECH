@@ -7,6 +7,15 @@
 .footerlight .footlinks li{
   color: #9d9d9d;
 }
+.footerlight .footlinks li:hover{
+  color: #61ce70;
+}
+.footerlight .footicon{
+  color: #9d9d9d;
+}
+.footerlight .footicon:hover{
+  color: #61ce70;
+}
 .footerdark{
   background-color: #141414;
 }
@@ -16,8 +25,14 @@
 .footerdark .footlinks li{
   color: #eeeeee;
 }
+.footerdark .footlinks li:hover{
+  color: #61ce70;
+}
 .footerdark .footicon{
-  filter: invert(1);
+  color: #eeeeee;
+}
+.footerdark .footicon:hover{
+  color: #61ce70;
 }
 .footercontainer {
   padding-top: 120px;
@@ -46,12 +61,14 @@
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   margin-right: 10px;
+  transition: 0.3s ease;
 }
 .footicon {
   width: 30px;
   border-radius: 15px;
   height: 30px;
   margin-right: 10px;
+  transition: 0.3s ease;
   cursor: pointer;
 }
 @media only screen and (max-width: 991px){

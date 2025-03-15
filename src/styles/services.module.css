@@ -19,7 +19,7 @@
 .serviceslight .serbox2,
 .serviceslight .serbox3,
 .serviceslight .serbox4{
-  border: 1px solid #eeeeee !important;
+  border: 1px solid #000000 !important;
 }
 .servicesdark{
   background-color: #141414;
@@ -144,11 +144,11 @@
 }
 .serbox3::before {
   background-image: url("../assets/ser3.jpg");
-  filter: blur(6px);
+  filter: blur(2px);
 }
 .serbox4::before {
   background-image: url("../assets/ser4.jpg");
-  filter: blur(4px);
+  filter: blur(2px);
 }
 .sertitle {
   font-size: 24px;
@@ -275,6 +275,9 @@
   .serbox3,
   .serbox4 {
     margin-right: 0;
+  }
+  .serbox3{
+    margin-right: 10px;
   }
   .serheadline {
     font-size: 20px;

@@ -53,8 +53,8 @@
 .pricinglight .cardfeatures li{
   color: #9d9d9d;
 }
-.pricingcard .cardicon{
-  color: #5a54f8;
+.pricinglight .cardicon{
+  color: #61ce70;
 }
 .pricingdark{
   background-color: #141414;
